@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.json-formatter-row {
+  padding-left: calc(2em / 3);
+}
+
+.json-formatter *,
+.json-formatter-dark * {
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+}
+
+.json-formatter-dark.json-formatter-row,
+.json-formatter-dark.json-formatter-row a,
+.json-formatter-dark.json-formatter-row a:hover {
+  color: #ffd700 !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-bracket {
+  color: #fff !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-string,
+.json-formatter-dark.json-formatter-row .json-formatter-stringifiable {
+  color: #4f4 !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-number {
+  color: #71eaff !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-boolean {
+  color: #ff8a8a !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-null {
+  color: #a585f1 !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-undefined {
+  color: #e776af !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-function {
+  color: #f89c1a !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-date {
+  color: #5fd !important;
+  background-color: #5fd4 !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-url {
+  color: #2393f5 !important;
+  text-decoration: none !important;
+}
+
+.json-formatter-dark.json-formatter-row .json-formatter-url:hover {
+  color: #f40 !important;
+}
+
+.json-formatter-key {
+  color: #fff !important;
+}
+
+.json-formatter-row .json-formatter-toggler {
+  position: relative;
+  padding-right: 0 !important;
+}
+
+.json-formatter-row .json-formatter-toggler:after {
+  content: "\25B6" !important;
+  position: absolute;
+  color: #fff8 !important;
+  right: calc(1em / 3) !important;
+}
+

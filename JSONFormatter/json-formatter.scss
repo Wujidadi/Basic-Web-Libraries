@@ -1,0 +1,91 @@
+.json-formatter-row
+{
+    padding-left: calc(2em / 3);
+}
+
+.json-formatter
+{
+    &, &-dark {
+        * {
+            white-space: pre-wrap !important;
+            word-break: break-all !important;
+        }
+    }
+
+    &-dark
+    {
+        &.json-formatter-row
+        {
+            &, & a, & a:hover
+            {
+                color: #ffd700 !important;
+            }
+
+            .json-formatter
+            {
+                &-bracket {
+                    color: #fff !important;
+                }
+
+                &-string, &-stringifiable {
+                    color: #4f4 !important;
+                }
+
+                &-number {
+                    color: #71eaff !important;
+                }
+
+                &-boolean {
+                    color: #ff8a8a !important;
+                }
+
+                &-null {
+                    color: #a585f1 !important;
+                }
+
+                &-undefined {
+                    color: #e776af !important;
+                }
+
+                &-function {
+                    color: #f89c1a !important;
+                }
+
+                &-date {
+                    color: #5fd !important;
+                    background-color: #5fd4 !important;
+                }
+
+                &-url {
+                    color: #2393f5 !important;
+                    text-decoration: none !important;
+
+                    &:hover {
+                        color: #f40 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &-key
+    {
+        color: #fff !important;
+    }
+
+    &-row
+    {
+        .json-formatter-toggler
+        {
+            position: relative;
+            padding-right: 0 !important;
+
+            &:after {
+                content: "▶" !important;
+                position: absolute;
+                color: #fff8 !important;
+                right: calc(1em / 3) !important;
+            }
+        }
+    }
+}
